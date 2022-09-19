@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  /*Primary*/
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-bright-yellow: hsl(71, 73%, 54%);
+  /*Neutral*/
+  --neutral-cyan: hsl(179, 47%, 52%);
+  --neutral-light-gray: hsl(204, 43%, 93%);
+  --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-light-gray);
+  height: 100vw;
+  display: grid;
+  place-items: center;
+  font-family: "Karla", sans-serif;
+}
+
+.main-class {
+  margin-top: -200px;
+  width: 580px;
+}
+
+.first {
+  height: 180px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.title h1 {
+  color: var(--primary-cyan);
+  padding-top: 35px;
+}
+
+.sub-title {
+  margin-top: 15px;
+}
+
+.sub-title h2 {
+  font-size: 1rem;
+  color: var(--primary-bright-yellow);
+}
+
+.text {
+  margin-top: 10px;
+  color: var(--neutral-grayish-blue);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.seccound {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primary-cyan);
+  color: var(--neutral-light-gray);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.left,
+.right {
+  padding-top: 40px;
+  padding-left: 35px;
+  height: 250px;
+  width: 100%;
+}
+
+.left-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.small-price {
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-left: 10px;
+  color: var(--neutral-light-gray);
+}
+
+.left-text {
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+.left button {
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: var(--primary-bright-yellow);
+  color: var(--neutral-light-gray);
+}
+
+.right {
+  background-color: var(--neutral-cyan);
+  border-bottom-right-radius: 10px;
+}
+
+.title-right {
+  font-weight: 700;
+}
+
+.text-right {
+  color: var(--neutral-light-gray);
+  font-size: 0.75rem;
+  margin-top: 20px;
+  width: 170px;
+  line-height: 1.125rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .main-class {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .first {
+    height: 250px;
+  }
+
+  .seccound {
+    grid-template-columns: 1fr;
+  }
+}
