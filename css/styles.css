@@ -17,15 +17,18 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--neutral-light-gray);
-  height: 100vw;
-  display: grid;
+  display: flex;
   place-items: center;
   font-family: "Karla", sans-serif;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-class {
-  margin-top: -200px;
   width: 580px;
 }
 
